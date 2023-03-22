@@ -1,4 +1,15 @@
-#include<iostream>
+#include <iostream>
+
+ // void pointer can point to any data type
+
+ void print(void* ptr, char type){
+      switch(type){
+        case 'i': std::cout<< *((int*)ptr); break;
+        case 'c': std::cout<< *((char*)ptr); break;
+
+      }
+      
+    }
 
 int main(){
 
@@ -30,5 +41,6 @@ int main(){
     }
     std::cout << arr << std::endl;
     delete [] arr5;
+     
   return 0;
 }
