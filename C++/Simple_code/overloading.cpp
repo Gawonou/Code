@@ -27,7 +27,6 @@ std::ostream& operator<<(std::ostream& Cout, tload& over){
 }
 
 
-
 class Collection {
     public:
     std::list<tload> ltload;
@@ -47,7 +46,6 @@ std::ostream& operator<<(std::ostream& Cout, Collection& cols){
     }
     return Cout;
 }
-
 
 int main() {
     tload *Ov = new tload("Gawonou", 40);
