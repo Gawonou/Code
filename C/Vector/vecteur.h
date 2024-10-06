@@ -38,7 +38,7 @@ typedef struct {
 } Etudiant;
 
 typedef struct {
-    Etudiant* Etudiant;
+    Etudiant* etudiants;
     int capacite;
     int taille;
 } VecteurEtudiants;
@@ -50,6 +50,10 @@ void libererVecteur(VecteurEtudiants* vecteur);
 int ajouteEtudiant(VecteurEtudiants vecteur, Etudiant etudiant);
 int suprimeEtudiant(VecteurEtudiants vecteur, int index);
 Etudiant* rechercheEtudiantParGrade(VecteurEtudiants vecteur, char grade);
+int lireEtudiantsDepuisFichier(const char *file, VecteurEtudiants* vectueur);
+char calculerGrade(float moyenne);
+void afficherEtudiants(VecteurEtudiants vecteur);
+float calculerMoyenne(Notes notes);
 
 
 
