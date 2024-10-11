@@ -60,12 +60,12 @@ vector<Student> ReadStudentsFromFile(const string &filename) {
         while (file >> firstName >> lastName >> middleInitial >> gpa >> course >> studentId) {
             lineCount++;
             // Affichage des données lues pour débogage
-            cout << "Ligne " << lineCount << " : Donnees lues - Prenom : " << firstName 
+            /* cout << "Ligne " << lineCount << " : Donnees lues - Prenom : " << firstName 
                  << ", Nom : " << lastName 
                  << ", Initiale : " << middleInitial 
                  << ", GPA : " << gpa 
                  << ", Cours : " << course 
-                 << ", ID : " << studentId << endl;
+                 << ", ID : " << studentId << endl; */
 
             students.emplace_back(firstName, lastName, middleInitial, gpa, course, studentId);
         }
