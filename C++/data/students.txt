@@ -1,5 +1,5 @@
 Michael Brown R 2.31 Math 8843
-Michael Martinez T 2.42 Art 7865
+Michael Martinez T 2.42 Art 7845
 Emily Davis N 3.96 English 3492
 Michael Williams T 2.23 Math 4560
 David Rodriguez K 3.76 History 3532
