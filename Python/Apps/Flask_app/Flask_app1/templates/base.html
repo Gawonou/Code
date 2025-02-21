@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title %}Mon site Web{%  endblock  %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')  }}">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+           <div class="logo">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+            </div>
+            <h1 class="wel-text"> Bienvenue sur le notre site  </h1>
+        </div>
+        </header>
+
+        <nav>
+              <ul>
+                    <li><a href=" {{ url_for('index') }}">Home</a></li>
+                    <li><a href=" {{ url_for('about') }}">About</a></li>
+                    <li><a href=" {{ url_for('services') }}" >Nos services</a></li>
+                    <li><a href=" {{ url_for('contact') }}" >Contact</a></li>
+              </ul>
+        
+        </nav>
+        <main>
+            {% block content %} {% endblock %}
+        </main>
+        <script src="" async defer></script>
+    </body>
+</html>
+
