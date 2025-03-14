@@ -88,7 +88,7 @@ vector<Student> ReadStudentsFromFile(const string &filename) {
 int main() {
     cout << "Gawonou ..." << endl;        
     try {
-        string filename = "../data/students.txt";  // Assurez-vous que ce chemin est correct
+        string filename = "../data/studentse.txt";  // Assurez-vous que ce chemin est correct
         vector<Student> students = ReadStudentsFromFile(filename);
         
         if (students.empty()) {

@@ -63,6 +63,7 @@ int main() {
     cols -= *Ov1;
     std::cout << " =================" <<std::endl;
     std::cout << cols;
+    //std::println()
 
 
     delete Ov;
