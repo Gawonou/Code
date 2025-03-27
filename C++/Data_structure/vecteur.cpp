@@ -26,8 +26,5 @@ class Vector {
     ~Vector(){
         delete[] arr;
     }
-
-
-
     
 } 
